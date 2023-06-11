@@ -21,6 +21,7 @@ export interface IChatMessage {
     content: string
     chatflowid: string
     createdDate: Date
+    sourceDocuments: string
 }
 
 export interface IComponentNodes {
@@ -115,6 +116,7 @@ export interface IncomingInput {
     question: string
     history: IMessage[]
     overrideConfig?: ICommonObject
+    socketIOClientId?: string
 }
 
 export interface IActiveChatflows {
